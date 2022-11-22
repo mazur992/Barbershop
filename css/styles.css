@@ -147,14 +147,16 @@ p {
 
   color: var(--color-font-background-minor);
 }
-.header-contact:hover {
+.header-contact:hover,
+.header-contact:focus {
   color: var(--color-accent);
 }
 .header-btn {
   color: var(--color-font-background-minor);
   margin-left: 40px;
 }
-.header-btn:hover {
+.header-btn:hover,
+.header-btn:focus {
   background-color: var(--color-accent);
 }
 
@@ -263,6 +265,10 @@ p {
 .about-btn {
   color: var(--color-font-major);
 }
+.about-btn:hover,
+.about-btn:focus {
+  background-color: var(--color-accent);
+}
 
 /*-------------------PRICES--------------*/
 
@@ -307,6 +313,9 @@ p {
   justify-content: space-between;
   margin-bottom: 20px;
 }
+.prices .item:last-child {
+  margin-bottom: 0;
+}
 .prices .text {
   font-size: 18px;
   line-height: 1.67;
@@ -318,6 +327,10 @@ p {
   display: block;
   margin: auto;
   color: var(--color-font-background-minor);
+}
+.prices-btn:hover,
+.prices-btn:focus {
+  background-color: var(--color-accent);
 }
 
 /*---------------BENEFITS-----------------*/
@@ -433,16 +446,14 @@ p {
   letter-spacing: 0.02em;
   color: var(--color-accent);
 }
-.soc-list {
+.barbers .soc-list {
   display: flex;
+  gap: 10px;
   justify-content: center;
 }
 .link-network {
-  display: flex;
-  gap: 20px;
 }
 .link-network {
-  display: block;
   display: flex;
   justify-content: center;
   align-items: center;
