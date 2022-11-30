@@ -104,14 +104,18 @@ p {
 .header {
 }
 .header .container {
+  position: absolute;
+  left: 50%;
   display: flex;
   align-items: center;
 
-  background: teal;
+  background: transparent;
+  transform: translate(-50%);
+  z-index: 2;
 }
 .header .logo {
   margin-right: 131px;
-  color: var(--color-font-background-minor);
+  color: var(--color-font-major);
 }
 .header .logo:hover,
 .header .logo:focus {
@@ -174,12 +178,34 @@ p {
 
 .hero {
 }
-.hero .list {
-  width: 100px;
-}
+
 .hero .container {
   display: flex;
   padding-right: 0;
+}
+.hero .list {
+  position: relative;
+  display: flex;
+  width: 100px;
+}
+.befor-link::before {
+  display: block;
+  content: " ";
+  width: 60px;
+  height: 1px;
+  background-color: var(--color-font-major);
+}
+.container-link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+
+  transform: rotate(-90deg);
+  transform-origin: left;
 }
 .hero-container {
   padding-top: 272px;
@@ -199,13 +225,13 @@ p {
 
   color: var(--color-font-major);
   text-decoration: none;
-  /* transform: rotate(-90deg); */
 }
 
 .hero .link:hover,
 .hero .link:focus {
   color: var(--color-accent);
 }
+
 .hero-uptitle {
   margin-bottom: 20px;
 
