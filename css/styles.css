@@ -291,6 +291,9 @@ p {
   margin-left: auto;
   color: #fff;
 }
+.forward-back__item.forward-back__item--white-line .forward-back__link::after {
+  background-color: #fff;
+}
 /*----------ABOUT-----------------*/
 
 .about {
