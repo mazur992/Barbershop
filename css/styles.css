@@ -7,6 +7,8 @@
   --background-major: #ffffff;
   --background-minor: #f7f7f7;
   --font-ral: "Raleway", sans-serif;
+  --duration: 250ms;
+  --cubic: cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 body {
   font-family: "Open Sans", sans-serif;
@@ -116,6 +118,7 @@ p {
 .header .logo {
   margin-right: 131px;
   color: var(--color-font-major);
+  transition: color var(--duration) var(--cubic);
 }
 .header .logo:hover,
 .header .logo:focus {
@@ -139,6 +142,7 @@ p {
   letter-spacing: 0.1em;
 
   color: var(--color-font-background-minor);
+  transition: color var(--duration) var(--cubic);
 }
 .header .link:hover,
 .header .link:focus {
@@ -160,14 +164,17 @@ p {
   text-decoration: none;
 
   color: var(--color-font-background-minor);
+  transition: color var(--duration) var(--cubic);
 }
 .header-contact:hover,
 .header-contact:focus {
   color: var(--color-accent);
 }
 .header-btn {
-  color: var(--color-font-background-minor);
   margin-left: 40px;
+
+  color: var(--color-font-background-minor);
+  transition: background-color var(--duration) var(--cubic);
 }
 .header-btn:hover,
 .header-btn:focus {
@@ -224,9 +231,11 @@ p {
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
+  text-decoration: none;
 
   color: var(--color-font-major);
-  text-decoration: none;
+
+  transition: color var(--duration) var(--cubic);
 }
 
 .hero .link:hover,
@@ -341,6 +350,7 @@ p {
 
 .about-btn {
   color: var(--color-font-major);
+  transition: background-color var(--duration) var(--cubic);
 }
 .about-btn:hover,
 .about-btn:focus {
@@ -424,6 +434,7 @@ p {
   display: block;
   margin: auto;
   color: var(--color-font-background-minor);
+  transition: background-color var(--duration) var(--cubic);
 }
 .prices-btn:hover,
 .prices-btn:focus {
@@ -444,7 +455,6 @@ p {
   flex-wrap: wrap;
   text-align: center;
   margin-left: 100px;
-  max-width: 370px;
 }
 .benefits .item:nth-child(2n) {
   margin-top: 30px;
@@ -557,8 +567,6 @@ p {
   justify-content: center;
 }
 .link-network {
-}
-.link-network {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -570,6 +578,7 @@ p {
 }
 .network-icon {
   fill: var(--color-font-major);
+  transition: fill var(--duration) var(--cubic);
 }
 .link-network:hover .network-icon,
 .link-network:focus .network-icon {
@@ -618,6 +627,74 @@ p {
   letter-spacing: 0.05em;
 
   color: var(--color-font-background-minor);
+  margin-bottom: 48.2px;
+}
+.container-booking {
+  padding-right: 30px;
+}
+.booking-form {
+}
+.booking-form__div {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.booking-form__input {
+  width: calc((100% - 30px) / 2);
+  height: 20.36px;
+  margin-bottom: 48px;
+
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: inherit;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+
+  transition: border-color var(--duration) var(--cubic);
+}
+.booking-form__input::placeholder {
+  transition: color var(--duration) var(--cubic);
+}
+.booking-form__input:hover::placeholder {
+  color: #fff;
+}
+.booking-form__input:hover {
+  border-color: #fff;
+}
+.booking-form__textarea {
+  margin-bottom: 44px;
+  width: 100%;
+  height: 72px;
+  resize: none;
+
+  border: none;
+  outline: none;
+
+  color: #fff;
+  background-color: inherit;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  transition: border-color var(--duration) var(--cubic);
+}
+.booking-form__textarea::placeholder {
+  transition: color var(--duration) var(--cubic);
+}
+.booking-form__textarea:hover::placeholder {
+  color: #fff;
+}
+.booking-form__textarea:hover {
+  border-color: #fff;
+}
+.booking-form__button {
+  width: 160px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: inherit;
+  color: #fff;
+  border-color: var(--color-accent);
+  transition: background-color var(--duration) var(--cubic);
+}
+.booking-form__button:hover {
+  background-color: var(--color-accent);
 }
 
 /*------------------CONTACTS----------------------*/
@@ -652,6 +729,7 @@ p {
   letter-spacing: 0.02em;
   color: var(--color-font-background-major);
   text-decoration: none;
+  transition: color var(--duration) var(--cubic);
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -734,6 +812,7 @@ p {
   cursor: pointer;
 
   color: var(--color-font-major);
+  transition: color var(--duration) var(--cubic);
 }
 
 footer .link:hover,

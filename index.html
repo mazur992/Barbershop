@@ -473,7 +473,34 @@
       <div class="container-wrap">
         <div class="container">
           <section class="booking">
-            <h2 class="section-title booking-title">Online-booking</h2>
+            <div class="container-booking">
+              <h2 class="section-title booking-title">Online-booking</h2>
+              <form class="booking-form">
+                <div class="booking-form__div">
+                  <input
+                    class="booking-form__input booking-form__input--name-hover"
+                    type="text"
+                    name="user-name"
+                    placeholder="NAME*"
+                    title="NAME*"
+                  />
+                  <input
+                    class="booking-form__input booking-form__input--tel-hover"
+                    type="tel"
+                    name="user-phone"
+                    placeholder="PHONE*"
+                    title="PHONE*"
+                  />
+                </div>
+                <textarea
+                  class="booking-form__textarea"
+                  name="user-text"
+                  placeholder="MASSAGE"
+                  title="MASSAGE"
+                ></textarea>
+                <button class="booking-form__button" type="submit">SEND</button>
+              </form>
+            </div>
           </section>
           <section class="contacts">
             <h2 class="section-title contscts-title">Contacts</h2>
