@@ -1,0 +1,91 @@
+.container-wrap {
+  background-color: #191c26;
+  background-image: url(../images/bg-contacts.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: calc(50% - 15px) 100%;
+  padding-top: 139px;
+  padding-bottom: 124px;
+}
+.booking-contacts__container {
+  display: flex;
+}
+.booking {
+  min-width: calc(50% + 15px);
+}
+.booking .booking-title {
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+
+  color: var(--color-font-background-minor);
+  margin-bottom: 48.2px;
+}
+.container-booking {
+  padding-right: 30px;
+}
+.booking-form {
+}
+.booking-form__contain {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.booking-form__input {
+  width: calc((100% - 30px) / 2);
+  height: 20.36px;
+  margin-bottom: 48px;
+
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: inherit;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+
+  transition: border-color var(--duration) var(--cubic);
+}
+.booking-form__input::placeholder {
+  transition: color var(--duration) var(--cubic);
+}
+.booking-form__input:hover::placeholder {
+  color: #fff;
+}
+.booking-form__input:hover {
+  border-color: #fff;
+}
+.booking-form__textarea {
+  margin-bottom: 44px;
+  width: 100%;
+  height: 72px;
+  resize: none;
+
+  border: none;
+  outline: none;
+
+  color: #fff;
+  background-color: inherit;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  transition: border-color var(--duration) var(--cubic);
+}
+.booking-form__textarea::placeholder {
+  transition: color var(--duration) var(--cubic);
+}
+.booking-form__textarea:hover::placeholder {
+  color: #fff;
+}
+.booking-form__textarea:hover {
+  border-color: #fff;
+}
+.booking-form__button {
+  width: 160px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: inherit;
+  color: #fff;
+  border-color: var(--color-accent);
+  transition: background-color var(--duration) var(--cubic);
+  cursor: pointer;
+}
+.booking-form__button:hover {
+  background-color: var(--color-accent);
+}

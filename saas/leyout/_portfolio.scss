@@ -1,0 +1,18 @@
+.portfolio {
+}
+.portfolio__container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.portfolio-uptitle {
+  margin-bottom: 44px;
+
+  color: var(--color-font-major);
+}
+.portfolio-list {
+  display: flex;
+  gap: 30px;
+}
+.portfolio-list__item {
+  width: calc((100% - 90px) / 4);
+}

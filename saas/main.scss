@@ -1,0 +1,39 @@
+// Variables
+@import "./utils/variables";
+
+// Total
+@import "./components/visually-hidden";
+@import "./components/container";
+@import "./components/body";
+@import "./components/reset";
+@import "./components/total-selectors";
+
+// Header
+@import "./leyout/header";
+
+// Hero
+@import "./leyout/hero";
+
+// About
+@import "./leyout/about";
+
+// Prices
+@import "./leyout/prices";
+
+// Benefits
+@import "./leyout/benefits";
+
+// Barbers
+@import "./leyout/barbers";
+
+// Portfolio
+@import "./leyout/portfolio";
+
+// Booking
+@import "./leyout/booking";
+
+// Contacts
+@import "./leyout/contacts";
+
+// Footer
+@import "./leyout/footer";

@@ -1,0 +1,41 @@
+.uptitle {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+.uptitle::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+}
+.subtitle {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+.section-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+}
+.btn {
+  min-width: 160px;
+  height: 40px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  border: 1px solid var(--color-accent);
+  border-radius: 25px;
+  background-color: inherit;
+}
