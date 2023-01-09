@@ -1,53 +1,82 @@
 .contacts {
-  min-width: calc(50% - 15px);
-  padding-left: 101px;
+  padding-top: 84px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 100px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+    min-width: calc(50% - 15px);
+    padding-left: 101px;
+    padding-top: 0;
+  }
+}
+.contacts-wrap {
 }
 .contacts-title {
   margin-bottom: 40px;
 
+  text-align: center;
+
   color: var(--color-font-background-minor);
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .address {
   display: flex;
   font-style: inherit;
-  margin-bottom: 70px;
+  margin-bottom: 44px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 70px;
+  }
 }
-.address-list__item {
-  margin-bottom: 20px;
-}
-.address-list__link {
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
-  color: var(--color-font-background-major);
-  text-decoration: none;
-  transition: color var(--duration) var(--cubic);
-}
-.address-list__link:hover,
-.address-list__link:focus {
-  color: var(--color-accent);
+.address-list {
+  &__item {
+    margin-bottom: 20px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--color-font-background-major);
+    text-decoration: none;
+    transition: color var(--duration) var(--cubic);
+  }
+  &__link:hover,
+  &__link:focus {
+    color: var(--color-accent);
+  }
+
+  &__link-bold {
+    font-weight: 700;
+  }
+  &__icon {
+    margin-right: 16px;
+    width: 24px;
+    height: 24px;
+    fill: transparent;
+  }
+  &__link:hover .icon {
+  }
 }
 
-.address-list__link-bold {
-  font-weight: 700;
+.working-container {
 }
-.address-list__icon {
-  margin-right: 16px;
-  width: 24px;
-  height: 24px;
-  fill: currentColor;
-}
-.address-list__link:hover .icon {
-}
-
 .working-title {
   display: flex;
   gap: 20px;
   align-items: center;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 
   font-weight: 600;
   font-size: 11px;

@@ -48,6 +48,13 @@
             Online-booking
           </button>
         </div>
+        <div class="mobile-menu">
+          <button class="mobile-menu__btn" type="button">
+            <svg class="mobile-menu__icon" width="40" height="40">
+              <use href="./images/icon.svg#icon-menu_40px">"</use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -113,21 +120,11 @@
       <section class="about" id="about">
         <div class="container about__container">
           <ul class="list beards-photo">
-            <li>
-              <img
-                src="./images/best1.jpg"
-                width="270"
-                height="445"
-                alt="beard1"
-              />
+            <li class="beards-photo__item">
+              <img src="./images/best1.jpg" alt="beard1" />
             </li>
-            <li>
-              <img
-                src="./images/best2.jpg"
-                width="270"
-                height="445"
-                alt="beard2"
-              />
+            <li class="beards-photo__item">
+              <img src="./images/best2.jpg" alt="beard2" />
             </li>
           </ul>
           <div class="about-wrap">
@@ -505,43 +502,47 @@
             </div>
           </section>
           <section class="contacts">
-            <h2 class="section-title contacts-title">Contacts</h2>
-            <address class="address">
-              <ul class="list address-list">
-                <li class="address-list__item">
-                  <a
-                    class="address-list__link address-list__link-bold"
-                    href="https://goo.gl/maps/QTgezLam2kNp7VkA6"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    ><svg class="address-list__icon" width="24" height="24">
-                      <use href="./images/icon.svg#icon-map-pin">"</use>
-                    </svg>
-                    st. Vasilkovaya, 7A Kiev, 08132</a
-                  >
-                </li>
-                <li class="address-list__item">
-                  <a class="address-list__link" href="tel:+380441111111"
-                    ><svg class="address-list__icon" width="24" height="24">
-                      <use href="./images/icon.svg#icon-phone">"</use>
-                    </svg>
-                    +38 044 111 11 11
-                  </a>
-                </li>
-                <li class="address-list__item">
-                  <a
-                    class="address-list__link"
-                    href="mailto:barbershop@email.com"
-                    ><svg class="address-list__icon" width="24" height="24">
-                      <use href="./images/icon.svg#icon-mail">"</use>
-                    </svg>
-                    barbershop@email.com</a
-                  >
-                </li>
-              </ul>
-            </address>
-            <span class="working-title">Working hours</span>
-            <p class="working-text">Every day from 9:00 to 22:00</p>
+            <div class="contacts-wrap">
+              <h2 class="section-title contacts-title">Contacts</h2>
+              <address class="address">
+                <ul class="list address-list">
+                  <li class="address-list__item">
+                    <a
+                      class="address-list__link address-list__link-bold"
+                      href="https://goo.gl/maps/QTgezLam2kNp7VkA6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><svg class="address-list__icon" width="24" height="24">
+                        <use href="./images/icon.svg#icon-map-pin">"</use>
+                      </svg>
+                      st. Vasilkovaya, 7A Kiev, 08132</a
+                    >
+                  </li>
+                  <li class="address-list__item">
+                    <a class="address-list__link" href="tel:+380441111111"
+                      ><svg class="address-list__icon" width="24" height="24">
+                        <use href="./images/icon.svg#icon-phone">"</use>
+                      </svg>
+                      +38 044 111 11 11
+                    </a>
+                  </li>
+                  <li class="address-list__item">
+                    <a
+                      class="address-list__link"
+                      href="mailto:barbershop@email.com"
+                      ><svg class="address-list__icon" width="24" height="24">
+                        <use href="./images/icon.svg#icon-mail">"</use>
+                      </svg>
+                      barbershop@email.com</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="working-container">
+              <span class="working-title">Working hours</span>
+              <p class="working-text">Every day from 9:00 to 22:00</p>
+            </div>
           </section>
         </div>
       </div>

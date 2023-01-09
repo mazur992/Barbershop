@@ -5,58 +5,79 @@
   position: relative;
   display: flex;
   padding-right: 0;
+
+  @media screen and (max-width: 767px) {
+    padding-left: 0;
+  }
 }
 .hero-network {
   position: relative;
   display: flex;
   width: 100px;
-}
-.hero-network__befor-link::before {
-  display: block;
-  content: " ";
-  width: 60px;
-  height: 1px;
-  background-color: var(--color-font-major);
-}
-.hero-network__contain {
-  display: flex;
-  align-items: center;
-  margin-bottom: 40px;
-  gap: 40px;
-  position: absolute;
-  bottom: 0;
-  left: 20px;
 
-  transform: rotate(-90deg);
-  transform-origin: left;
-}
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
-.hero-network__link {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.2em;
-  text-decoration: none;
+  &__befor-link::before {
+    display: block;
+    content: " ";
+    width: 60px;
+    height: 1px;
+    background-color: var(--color-font-major);
+  }
+  &__contain {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
 
-  color: var(--color-font-major);
+    transform: rotate(-90deg);
+    transform-origin: left;
+  }
 
-  transition: color var(--duration) var(--cubic);
-}
+  &__link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    text-decoration: none;
 
-.hero-network__link:hover,
-.hero-network__link:focus {
-  color: var(--color-accent);
+    color: var(--color-font-major);
+
+    transition: color var(--duration) var(--cubic);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: var(--color-accent);
+  }
 }
 
 .hero-container {
   position: relative;
-  padding-top: 272px;
+  padding-top: 208px;
   padding-bottom: 208px;
-  padding-left: 100px;
+  padding-left: 31px;
 
   background-image: url(../images/hero-image.jpg);
   background-repeat: no-repeat;
+  background-position: center;
   flex-grow: 1;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 272px;
+    padding-bottom: 237px;
+    padding-left: 120px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 272px;
+    padding-bottom: 208px;
+    padding-left: 100px;
+  }
 }
 .hero-uptitle {
   margin-bottom: 20px;
@@ -68,15 +89,27 @@
   margin-bottom: 20px;
 
   font-family: var(--font-ral);
-  font-size: 72px;
-  line-height: 1.18;
+  font-size: 48px;
+  line-height: 1.17;
   letter-spacing: 0.05em;
   color: var(--color-font-background-minor);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 72px;
+    line-height: 1.18;
+  }
 }
 
 .hero-subtitle {
   max-width: 358px;
   color: var(--color-font-background-major);
+  font-size: 16px;
+  line-height: 1.63;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.67;
+  }
 }
 .forward-back {
   position: absolute;
@@ -84,37 +117,42 @@
   bottom: 40px;
   display: flex;
   gap: 30px;
-}
-.forward-back__link {
-  position: relative;
-  display: flex;
-  width: 60px;
-  height: 24px;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
 
-  color: rgba(157, 164, 189, 0.6);
-  text-decoration: none;
-}
-.forward-back__link::after {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
-  content: " ";
-  width: 60px;
-  height: 1px;
-  background-color: rgba(157, 164, 189, 0.6);
-}
+  &__link {
+    position: relative;
+    display: flex;
+    width: 60px;
+    height: 24px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
 
-.forward-back__text {
-}
-.forward-back__text--text-right {
-  margin-left: auto;
-  color: #fff;
-}
-.forward-back__item.forward-back__item--white-line .forward-back__link::after {
-  background-color: #fff;
+    color: rgba(157, 164, 189, 0.6);
+    text-decoration: none;
+  }
+  &__link::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    content: " ";
+    width: 60px;
+    height: 1px;
+    background-color: rgba(157, 164, 189, 0.6);
+  }
+
+  &__text {
+  }
+  &__text--text-right {
+    margin-left: auto;
+    color: #fff;
+  }
+  &__item.forward-back__item--white-line &__link::after {
+    background-color: #fff;
+  }
 }

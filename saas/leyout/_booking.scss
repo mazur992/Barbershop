@@ -2,90 +2,157 @@
   background-color: #191c26;
   background-image: url(../images/bg-contacts.png);
   background-repeat: no-repeat;
-  background-position: right;
-  background-size: calc(50% - 15px) 100%;
-  padding-top: 139px;
-  padding-bottom: 124px;
+
+  background-position-y: 557px;
+  background-size: contain;
+  padding-top: 84px;
+  padding-bottom: 84px;
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-position-y: 521px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-position: right;
+    background-size: calc(50% - 15px) 100%;
+  }
 }
 .booking-contacts__container {
   display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 .booking {
   min-width: calc(50% + 15px);
+  padding-bottom: 84px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 100px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
 }
 .booking .booking-title {
+  margin-bottom: 44px;
+  text-align: center;
   font-size: 42px;
   line-height: 1.17;
   letter-spacing: 0.05em;
 
   color: var(--color-font-background-minor);
-  margin-bottom: 48.2px;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 .container-booking {
-  padding-right: 30px;
+  @media screen and (min-width: 1200px) {
+    padding-right: 30px;
+  }
 }
 .booking-form {
-}
-.booking-form__contain {
-  display: inline-flex;
-  justify-content: space-between;
-  width: 100%;
-}
-.booking-form__input {
-  width: calc((100% - 30px) / 2);
-  height: 20.36px;
-  margin-bottom: 48px;
+  &__contain {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  &__input {
+    width: 100%;
+    height: 24px;
 
-  border: none;
-  outline: none;
-  color: #fff;
-  background-color: inherit;
-  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    margin-bottom: 44px;
+    padding-bottom: 8px;
 
-  transition: border-color var(--duration) var(--cubic);
-}
-.booking-form__input::placeholder {
-  transition: color var(--duration) var(--cubic);
-}
-.booking-form__input:hover::placeholder {
-  color: #fff;
-}
-.booking-form__input:hover {
-  border-color: #fff;
-}
-.booking-form__textarea {
-  margin-bottom: 44px;
-  width: 100%;
-  height: 72px;
-  resize: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: inherit;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
 
-  border: none;
-  outline: none;
+    transition: border-color var(--duration) var(--cubic);
 
-  color: #fff;
-  background-color: inherit;
-  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
-  transition: border-color var(--duration) var(--cubic);
-}
-.booking-form__textarea::placeholder {
-  transition: color var(--duration) var(--cubic);
-}
-.booking-form__textarea:hover::placeholder {
-  color: #fff;
-}
-.booking-form__textarea:hover {
-  border-color: #fff;
-}
-.booking-form__button {
-  width: 160px;
-  height: 40px;
-  border-radius: 20px;
-  background-color: inherit;
-  color: #fff;
-  border-color: var(--color-accent);
-  transition: background-color var(--duration) var(--cubic);
-  cursor: pointer;
-}
-.booking-form__button:hover {
-  background-color: var(--color-accent);
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+    }
+  }
+  &__input::placeholder {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    color: rgba(157, 164, 189, 0.4);
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: color var(--duration) var(--cubic);
+  }
+  &__input:hover::placeholder {
+    color: #fff;
+  }
+  &__input:hover {
+    border-color: #fff;
+  }
+  &__textarea {
+    margin-bottom: 44px;
+    width: 100%;
+    height: 72px;
+    resize: none;
+
+    border: none;
+    outline: none;
+
+    color: #fff;
+    background-color: inherit;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    transition: border-color var(--duration) var(--cubic);
+  }
+  &__textarea::placeholder {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    color: rgba(157, 164, 189, 0.4);
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: color var(--duration) var(--cubic);
+  }
+  &__textarea:hover::placeholder {
+    color: #fff;
+  }
+  &__textarea:hover {
+    border-color: #fff;
+  }
+  &__button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 160px;
+    height: 40px;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    text-align: center;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+
+    border-radius: 20px;
+    background-color: inherit;
+    color: #fff;
+    border-color: var(--color-accent);
+    transition: background-color var(--duration) var(--cubic);
+    cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  &__button:hover {
+    background-color: var(--color-accent);
+  }
 }

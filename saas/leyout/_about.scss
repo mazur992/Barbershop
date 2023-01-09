@@ -1,18 +1,59 @@
 .about {
 }
 .about__container {
-  padding-top: 120px;
-  padding-bottom: 120px;
   display: flex;
   gap: 30px;
+
+  padding-top: 84px;
+  padding-bottom: 84px;
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 .beards-photo {
   display: flex;
   gap: 30px;
   flex-shrink: 0;
+
+  &__item {
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+
+    &_item {
+      width: 330px;
+      height: 235px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+
+    &__item {
+      width: 270px;
+      height: 445px;
+    }
+  }
+}
+.beards-photo img {
+  height: auto;
 }
 .about-wrap {
-  max-width: 470px;
+  // max-width: 470px;
+  max-width: 100%;
+  @media screen and (min-width: 768px) {
+    max-width: 330px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 470px;
+  }
 }
 .about-uptitle {
   margin-bottom: 20px;
@@ -21,14 +62,32 @@
 }
 .about-title {
   margin-bottom: 20px;
+  width: 306px;
+
+  font-size: 28px;
+  line-height: 1.18;
 
   color: var(--color-font-major);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 42px;
+    line-height: 1.16;
+    width: 470px;
+  }
 }
 
 .about-subtitle {
   margin-bottom: 20px;
 
+  font-size: 16px;
+  line-height: 1.62;
+
   color: var(--color-font-minor);
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.67;
+  }
 }
 
 .about-text {
