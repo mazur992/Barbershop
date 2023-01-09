@@ -21,6 +21,54 @@
     <title>FS73</title>
   </head>
   <body>
+    <div class="mobile-menu js-menu-container">
+      <div>
+        <button class="mobile-menu__btn-close js-close-menu" type="button">
+          <svg class="mobile-menu__icon" width="40" height="40">
+            <use href="./images/icon.svg#icon-close_40px">"</use>
+          </svg>
+        </button>
+
+        <ul class="list mobile-menu__list">
+          <li><a class="mobile-menu__link" href="#about">About</a></li>
+          <li>
+            <a class="mobile-menu__link" href="#prices">Services and prices</a>
+          </li>
+          <li><a class="mobile-menu__link" href="#barbers">Barbers</a></li>
+          <li>
+            <a class="mobile-menu__link" href="./contacts.html">Contacts</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <a class="mobile-menu__link" href="tel:+380441111111"
+          >+38 044 111 11 11</a
+        >
+        <button class="btn mobile-menu__btn" type="button">
+          Online-booking
+        </button>
+      </div>
+      <ul class="list mobile-menu__soc-list">
+        <li>
+          <a
+            class="mobile-menu__soc-link"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram</a
+          >
+        </li>
+        <li>
+          <a
+            class="mobile-menu__soc-link"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Youtube</a
+          >
+        </li>
+      </ul>
+    </div>
     <header class="header">
       <div class="container header__container">
         <a href="/" class="logo">
@@ -48,13 +96,11 @@
             Online-booking
           </button>
         </div>
-        <div class="mobile-menu">
-          <button class="mobile-menu__btn" type="button">
-            <svg class="mobile-menu__icon" width="40" height="40">
-              <use href="./images/icon.svg#icon-menu_40px">"</use>
-            </svg>
-          </button>
-        </div>
+        <button class="open-btn js-open-menu" type="button">
+          <svg class="open-icon" width="40" height="40">
+            <use href="./images/icon.svg#icon-menu_40px">"</use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -572,5 +618,6 @@
         </ul>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
