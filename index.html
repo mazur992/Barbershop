@@ -17,6 +17,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>FS73</title>
   </head>
@@ -36,7 +40,7 @@
           </li>
           <li><a class="mobile-menu__link" href="#barbers">Barbers</a></li>
           <li>
-            <a class="mobile-menu__link" href="./contacts.html">Contacts</a>
+            <a class="mobile-menu__link" href="#contacts">Contacts</a>
           </li>
         </ul>
       </div>
@@ -45,14 +49,14 @@
           >+38 044 111 11 11</a
         >
         <button class="btn mobile-menu__btn" type="button">
-          Online-booking
+          <a href="#booking">Online-booking</a>
         </button>
       </div>
       <ul class="list mobile-menu__soc-list">
         <li>
           <a
             class="mobile-menu__soc-link"
-            href="#"
+            href="https://www.instagram.com/"
             target="_blank"
             rel="noopener noreferrer"
             >Instagram</a
@@ -61,7 +65,7 @@
         <li>
           <a
             class="mobile-menu__soc-link"
-            href="#"
+            href="https://www.youtube.com/watch?v=i6osg9wAn74"
             target="_blank"
             rel="noopener noreferrer"
             >Youtube</a
@@ -84,7 +88,7 @@
             </li>
             <li><a class="navigation__link" href="#barbers">Barbers</a></li>
             <li>
-              <a class="navigation__link" href="./contacts.html">Contacts</a>
+              <a class="navigation__link" href="#contacts">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -93,7 +97,7 @@
             >+38 044 111 11 11</a
           >
           <button class="btn contacts-nav__btn" type="button">
-            Online-booking
+            <a href="#booking">Online-booking</a>
           </button>
         </div>
         <button class="open-btn js-open-menu" type="button">
@@ -113,7 +117,7 @@
               <li>
                 <a
                   class="hero-network__link"
-                  href="#"
+                  href="https://www.instagram.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   >Instagram</a
@@ -122,7 +126,7 @@
               <li>
                 <a
                   class="hero-network__link"
-                  href="#"
+                  href="https://www.youtube.com/watch?v=i6osg9wAn74"
                   target="_blank"
                   rel="noopener noreferrer"
                   >Youtube</a
@@ -132,27 +136,21 @@
           </ul>
           <div class="hero-container">
             <p class="uptitle hero-uptitle">A hair salon for men in Kyiv</p>
-            <h1 class="hero-title">BarberShop</h1>
+            <h1 class="hero-title animate__animated animate__bounceInUp">
+              BarberShop
+            </h1>
             <p class="subtitle hero-subtitle">
               We are experts in trendy men’s haircuts. We work quickly,
               carefully and with style.
             </p>
             <ul class="list forward-back">
               <li class="forward-back__item">
-                <a
-                  class="forward-back__link"
-                  href="http://#"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <a class="forward-back__link"
                   ><span class="forward-back__text">Back</span></a
                 >
               </li>
               <li class="forward-back__item forward-back__item--white-line">
-                <a
-                  class="forward-back__link"
-                  href="http://#"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <a class="forward-back__link"
                   ><span
                     class="forward-back__text forward-back__text--text-right"
                     >Forward</span
@@ -167,10 +165,48 @@
         <div class="container about__container">
           <ul class="list beards-photo">
             <li class="beards-photo__item">
-              <img src="./images/best1.jpg" alt="beard1" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/1about-desk@1.jpg 1x,
+                    ./images/1about-desk@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/1about-tab@1.jpg 1x,
+                    ./images/1about-tab@2.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/1about-desk@1.jpg 1x, ./images/1about-desk@2.jpg 2x"
+                  alt="beard1"
+                />
+              </picture>
             </li>
             <li class="beards-photo__item">
-              <img src="./images/best2.jpg" alt="beard2" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/2about-desk@1.jpg 1x,
+                    ./images/2about-desk@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/2about-tab@1.jpg 1x,
+                    ./images/2about-tab@2.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/2about-desk@1.jpg 1x, ./images/2about-desk@2.jpg 2x"
+                  alt="beard1"
+                />
+              </picture>
             </li>
           </ul>
           <div class="about-wrap">
@@ -189,7 +225,9 @@
               always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button type="button" class="btn about-btn">Online-booking</button>
+            <button type="button" class="btn about-btn">
+              <a href="#booking">Online-booking</a>
+            </button>
           </div>
         </div>
       </section>
@@ -239,7 +277,7 @@
             </ul>
           </div>
           <button type="button" class="btn prices-list__btn">
-            Online-booking
+            <a href="#booking">Online-booking</a>
           </button>
         </div>
       </section>
@@ -291,12 +329,34 @@
           <h2 class="section-title barbers-title">Our barbers</h2>
           <ul class="list barbers-list">
             <li class="barbers-list__item">
-              <img
-                src="./images/John_Smith.jpg"
-                width="370"
-                height="346"
-                alt="John Smith"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/barbers/1barbers-desk@1.jpg 1x,
+                    ./images/barbers/1barbers-desk@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/barbers/1barbers-tab@1.jpg 1x,
+                    ./images/barbers/1barbers-tab@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/barbers/1barbers-mob@1.jpg 1x,
+                    ./images/barbers/1barbers-mob@2.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/barbers/1barbers-tab@1.jpg     1x,
+                    ./images/barbers/1barbers-tab@2.jpg 2x"
+                  alt="John Smith"
+                />
+              </picture>
               <h3 class="barbers-list__title">John Smith</h3>
               <p class="barbers-list__text">Extreme Barber</p>
               <ul class="soc-list list">
@@ -351,12 +411,34 @@
               </ul>
             </li>
             <li class="barbers-list__item">
-              <img
-                src="./images/Michele_Doe.jpg"
-                width="370"
-                height="346"
-                alt="Michele Doe"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/barbers/2barbers-desk@1.jpg 1x,
+                    ./images/barbers/2barbers-desk@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/barbers/2barbers-tab@1.jpg 1x,
+                    ./images/barbers/2barbers-tab@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/barbers/2barbers-mob@1.jpg 1x,
+                    ./images/barbers/2barbers-mob@2.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/barbers/2barbers-tab@1.jpg     1x,
+                    ./images/barbers/2barbers-tab@2.jpg 2x"
+                  alt="Michele Doe"
+                />
+              </picture>
               <h3 class="barbers-list__title">Michele Doe</h3>
               <p class="barbers-list__text">Extreme Barber</p>
               <ul class="soc-list list">
@@ -411,12 +493,34 @@
               </ul>
             </li>
             <li class="barbers-list__item">
-              <img
-                src="./images/Alan-Black.jpg"
-                width="370"
-                height="346"
-                alt="Alan Black"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/barbers/3barbers-desk@1.jpg 1x,
+                    ./images/barbers/3barbers-desk@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/barbers/3barbers-tab@1.jpg 1x,
+                    ./images/barbers/3barbers-tab@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/barbers/3barbers-mob@1.jpg 1x,
+                    ./images/barbers/3barbers-mob@2.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/barbers/3barbers-tab@1.jpg     1x,
+                    ./images/barbers/3barbers-tab@2.jpg 2x"
+                  alt="Alan Black"
+                />
+              </picture>
               <h3 class="barbers-list__title">Alan Black</h3>
               <p class="barbers-list__text">Extreme Barber</p>
               <ul class="soc-list list">
@@ -481,43 +585,131 @@
           <h2 class="visually-hidden">Portfolio</h2>
           <ul class="list portfolio-list">
             <li class="portfolio-list__item">
-              <img
-                src="./images/beard1.jpg"
-                width="270"
-                height="360"
-                alt="beard"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/1portf-desk@1.jpg 1x,
+                    ./images/portfolio/1portf-desk@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/1portf-tab@1.jpg 1x,
+                    ./images/portfolio/1portf-tab@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/1portf-mob@1.jpg 1x,
+                    ./images/portfolio/1portf-mob@2.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/portfolio/1portf-mob@1.jpg 1x,
+                    ./images/portfolio/1portf-mob@2.jpg 2x"
+                  alt="haircut1"
+                />
+              </picture>
             </li>
             <li class="portfolio-list__item">
-              <img
-                src="./images/beard2.jpg"
-                width="270"
-                height="360"
-                alt="beard"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/2portf-desk@1.jpg 1x,
+                    ./images/portfolio/2portf-desk@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/2portf-tab@1.jpg 1x,
+                    ./images/portfolio/2portf-tab@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/2portf-mob@1.jpg 1x,
+                    ./images/portfolio/2portf-mob@2.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/portfolio/2portf-mob@1.jpg 1x,
+                    ./images/portfolio/2portf-mob@2.jpg 2x"
+                  alt="haircut2"
+                />
+              </picture>
             </li>
             <li class="portfolio-list__item">
-              <img
-                src="./images/beard3.jpg"
-                width="270"
-                height="360"
-                alt="beard"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/3portf-desk@1.jpg 1x,
+                    ./images/portfolio/3portf-desk@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/3portf-tab@1.jpg 1x,
+                    ./images/portfolio/3portf-tab@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/3portf-mob@1.jpg 1x,
+                    ./images/portfolio/3portf-mob@2.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/portfolio/3portf-mob@1.jpg 1x,
+                    ./images/portfolio/3portf-mob@2.jpg 2x"
+                  alt="haircut3"
+                />
+              </picture>
             </li>
             <li class="portfolio-list__item">
-              <img
-                src="./images/beard4.jpg"
-                width="270"
-                height="360"
-                alt="beard"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/4portf-desk@1.jpg 1x,
+                    ./images/portfolio/4portf-desk@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/4portf-tab@1.jpg 1x,
+                    ./images/portfolio/4portf-tab@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/4portf-mob@1.jpg 1x,
+                    ./images/portfolio/4portf-mob@2.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/portfolio/4portf-mob@1.jpg 1x,
+                    ./images/portfolio/4portf-mob@2.jpg 2x"
+                  alt="haircut4"
+                />
+              </picture>
             </li>
           </ul>
         </div>
       </section>
       <div class="container-wrap">
         <div class="container booking-contacts__container">
-          <section class="booking">
+          <section class="booking" id="booking">
             <div class="container-booking">
               <h2 class="section-title booking-title">Online-booking</h2>
               <form class="booking-form">
@@ -547,7 +739,7 @@
               </form>
             </div>
           </section>
-          <section class="contacts">
+          <section class="contacts" id="contacts">
             <div class="contacts-wrap">
               <h2 class="section-title contacts-title">Contacts</h2>
               <address class="address">
@@ -600,7 +792,7 @@
           <li>
             <a
               class="footer-network__link"
-              href="#"
+              href="https://www.instagram.com/"
               target="_blank"
               rel="noopener noreferrer"
               >Instagram</a
@@ -609,7 +801,7 @@
           <li>
             <a
               class="footer-network__link"
-              href="#"
+              href="https://www.youtube.com/watch?v=i6osg9wAn74"
               target="_blank"
               rel="noopener noreferrer"
               >Youtube</a

@@ -63,20 +63,37 @@
   padding-bottom: 208px;
   padding-left: 31px;
 
-  background-image: url(../images/hero-image.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   flex-grow: 1;
+
+  @media screen and (max-width: 767px) {
+    @include retina {
+      background-image: url("../../images/bg-hero-mob@2.jpg");
+    }
+    background-image: url("../../images/bg-hero-mob@1.jpg");
+  }
 
   @media screen and (min-width: 768px) {
     padding-top: 272px;
     padding-bottom: 237px;
     padding-left: 120px;
+
+    @include retina {
+      background-image: url("../../images/bg-hero-tab@2.jpg");
+    }
+    background-image: url("../../images/bg-hero-tab@1.jpg");
   }
   @media screen and (min-width: 1200px) {
     padding-top: 272px;
     padding-bottom: 208px;
     padding-left: 100px;
+
+    @include retina {
+      background-image: url("../../images/bg-hero-desk@2.jpg");
+    }
+    background-image: url("../../images/bg-hero-desk@1.jpg");
   }
 }
 .hero-uptitle {
