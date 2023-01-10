@@ -70,9 +70,9 @@
 
   @media screen and (max-width: 767px) {
     @include retina {
-      background-image: url("../../images/bg-hero-mob@2.jpg");
+      background-image: url("../images/bg-hero-mob@2.jpg");
     }
-    background-image: url("../../images/bg-hero-mob@1.jpg");
+    background-image: url("../images/bg-hero-mob@1.jpg");
   }
 
   @media screen and (min-width: 768px) {
@@ -81,9 +81,9 @@
     padding-left: 120px;
 
     @include retina {
-      background-image: url("../../images/bg-hero-tab@2.jpg");
+      background-image: url("../images/bg-hero-tab@2.jpg");
     }
-    background-image: url("../../images/bg-hero-tab@1.jpg");
+    background-image: url("../images/bg-hero-tab@1.jpg");
   }
   @media screen and (min-width: 1200px) {
     padding-top: 272px;
@@ -91,9 +91,9 @@
     padding-left: 100px;
 
     @include retina {
-      background-image: url("../../images/bg-hero-desk@2.jpg");
+      background-image: url("../images/bg-hero-desk@2.jpg");
     }
-    background-image: url("../../images/bg-hero-desk@1.jpg");
+    background-image: url("../images/bg-hero-desk@1.jpg");
   }
 }
 .hero-uptitle {

@@ -10,18 +10,18 @@
   padding-bottom: 84px;
 
   @include retina {
-    background-image: url("../../images/contacts/bg-contacts-mob@2.png");
+    background-image: url("../images/contacts/bg-contacts-mob@2.png");
   }
-  background-image: url("../../images/contacts/bg-contacts-mob@1.png");
+  background-image: url("../images/contacts/bg-contacts-mob@1.png");
   @media screen and (min-width: 768px) {
     padding-top: 100px;
     padding-bottom: 100px;
     background-position-y: 521px;
 
     @include retina {
-      background-image: url("../../images/contacts/bg-contacts-tab@2.png");
+      background-image: url("../images/contacts/bg-contacts-tab@2.png");
     }
-    background-image: url("../../images/contacts/bg-contacts-tab@1.png");
+    background-image: url("../images/contacts/bg-contacts-tab@1.png");
   }
   @media screen and (min-width: 1200px) {
     padding-top: 120px;
@@ -30,9 +30,9 @@
     background-size: calc(50% - 15px) 100%;
 
     @include retina {
-      background-image: url("../../images/contacts/bg-contacts-desk@2.png");
+      background-image: url("../images/contacts/bg-contacts-desk@2.png");
     }
-    background-image: url("../../images/contacts/bg-contacts-desk@1.png");
+    background-image: url("../images/contacts/bg-contacts-desk@1.png");
   }
 }
 .booking-contacts__container {
